@@ -24,11 +24,11 @@ const rightArrow = document.querySelectorAll(".right");
 
 slider.forEach((item, i) => {
 
-    leftArrow[i].addEventListener("click", () =>{
+    leftArrow[i].addEventListener("click", () => {
         item.scrollBy(-200, 0);
     })
 
-    rightArrow[i].addEventListener("click", () =>{
+    rightArrow[i].addEventListener("click", () => {
         item.scrollBy(200, 0);
     })
 })

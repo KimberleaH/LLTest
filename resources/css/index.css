@@ -254,22 +254,6 @@ header p {
 
 
 
-/* SLIDER -- Merge or replace section below, following a tutorial -- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -666,7 +650,9 @@ hr {
         width: 100px;
     }
 
-    /* SLIDER SECTION */
+
+
+    /* NEW RELEASES SECTION */
 
     .left-fade {
         width: 200px;
@@ -676,15 +662,9 @@ hr {
         width: 200px;
     }
 
-
-
-
-    /* SLIDER SECTION */
-
     .card {
         max-width: 500px;
     }
-
 
 
 
@@ -768,7 +748,6 @@ hr {
         display: none;
         flex-direction: column;
         position: fixed;
-        /* left: -100%; */
         top: 64px;
         background-color: #F6F6F6;
         width: 100%;
@@ -842,7 +821,7 @@ hr {
 
 
 
-    /* SLIDER SECTION */
+    /* NEW RELEASES SECTION */
 
     .left-fade {
         width: 100px;
@@ -961,8 +940,6 @@ hr {
     textarea {
         width: 355px;
     }
-
-
 
 
 
