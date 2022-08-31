@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Synder Recordings - Home</title>
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+  </head>
+
+
+  <!-- TIME TRACKING
+
+    8/24/2022 - 11am - 3:15pm ---------------------------------------- (4hrs 15mins)
+    8/25/2022 - 11:40am - 5:10pm ------------------------------------- (5hrs 30mins)
+    8/26/2022 - 10:00am - 12pm , 2:00pm - 4:35pm --------------------- (4hrs 35mins)
+    8/27/2022 - 2:00pm - 4:07pm -------------------------------------- (4hrs 7mins)
+    8/28/2022 - 10:10am - 12:35pm ------------------------------------ (2hrs 25mins)
+    8/29/2022 - 10:10am - 11:18am, 1:15pm - 2:20pm, 3:00pm - 6:50pm -- (6hrs 3mins)
+    8/30/2022 - 9:20am - 12:00pm,  1:20pm - 3:10pm, 4:45pm - 6:10pm -- (5hrs 55mins)
+    8/31/2022 - 10:00am - 11:22am, (Started Bonus >>) 12:46pm - 
+
+(Total: hrs)
+
+Note: Address form width for narrower desktop query. And try to get that stinky little grabber style on there
+
+8. Bonus: Include a full width google map in the page with a custom skin. Add a pin for Lifted Logic’s location, 7815 Floyd Street Overland Park, KS 66204
+    ^ This will require working with the google maps api. See liked youtube video on how. The custom map is already made. Now just needs to be implemented.
+
+    -->
+
+
+
+
+  <body>
+    <!------------------------------------ Header ------------------------------------>
+    <header> 
+      <nav> <!-- Navigation -->
+        <div class="logo"> <!-- Logo -->
+          <img src="resources/icons/Logo-Blue.svg" alt="Synder Recordings">
+        </div>
+  
+        <div class="nav-menu"> <!-- Nav links -->
+          <a href="" class="clicklink nav-link"> <!-- Home -->
+            <span><img class="nav-icon" src="resources/icons/Home.svg"></span>
+            <span>Home</span></a>
+          <a href="" class="clicklink nav-link"> <!-- Records -->
+            <span><img class="nav-icon" src="resources/icons/Record.svg"></span>
+            <span>Records</span></a>
+          <a href="" class="clicklink nav-link"> <!-- Music -->
+            <span><img class="nav-icon" src="resources/icons/Music Note.svg"></span>
+            <span>Music</span></a>
+          <a href="" class="clicklink nav-link"> <!-- Artists -->
+            <span><img class="nav-icon" src="resources/icons/People.svg"></span>
+            <span>Artists</span></a>
+          <a href="" class="clicklink nav-link"> <!-- Concerts -->
+            <span><img class="nav-icon" src="resources/icons/People.svg"></span>
+            <span>Concerts</span></a>
+          <button type="button" class="clicklink">Sign Up</button>
+        </div>
+
+        <div class="hamburger"> <!-- Hamburger menu button for tablet and mobile devices-->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <div class="header-flex"> <!-- Hero section text -->
+        <h1>A.M. Paradox</h1>
+        <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is 
+        an American singer and record producer. He released his debut project, an 
+        extended play entitled A.M. Paradox, in 2016.</p>
+         
+        <a href="" class="watch"> <!-- This is the Watch Video button in the header -->
+          <span><img class="play-triangle" src="resources/icons/playbutton.svg" alt="play button"></span>
+          <span><p>Watch Video</p></span>
+        </a>
+      </div>
+      
+      <div class="h-background"> <!-- This is the animated background for the header --> </div>
+    </header>
+    
+
+    <main> <!-- Main Content-->
+    <!--------------------------- Featured Section w/ Artist ------------------------>
+      <section class="featured">
+        <div class="artist-img"><!-- This is the image in the section beneath the header with the blurb --> </div>
+
+        <div class="blurb">
+          <h3>Brent Faiyaz, So Far Gone</h3>
+
+          <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from 
+          his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately 
+          settling in Los Angeles, California to further his music career.  On January 19, 
+          2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released 
+          "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, 
+          his 21st birthday, the EP entitled A.M. Paradox was released and received with 
+          positive reviews from music critics.  On January 26, 2017, Sonder released 
+          their debut EP Into.</p>
+
+          <button type="button">Learn More</button>
+        </div>
+      </section>
+
+
+    <!--------------------------- New Releases w/ Slider ------------------------>
+      <section class="new">
+        <div class="new-releases">
+          <h3>New Releases</h3>
+          <p>New albums every single month, check out the newest & best from Snyder 
+          Recording artist, now available on Apple Music & Spotify.</p>
+        </div>
+        
+        <!----- Full slider including the pagination beneath it ----->
+        <section class="slider">
+          <section class="slide"> <!-- Container for the cards -->
+
+            <!-- These are the fades that border the slider -->
+            <div class="left-fade"></div>
+            <div class="right-fade"></div>
+
+          <div class="card"> <!-- Slide 1 -->
+            <!-- Card image -->
+            <img class="card-img" src="resources/images/71RLkNIuZNL._SY355_.jpg">
+            <div class="card-info"> <!-- Info -->
+              <h4>Trapsoul</h4>
+              <p class="artist">Bryson Tiller</p>
+              <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born 
+              in Louisville, Kentucky, he started his career in 2011, releasing the debut 
+              mixtape titled Killer Instinct Vol.1.</p>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Slide 2 -->
+            <!-- Card image -->
+            <img class="card-img" src="resources/images/71RLkNIuZNL._SY355_.jpg">
+            <div class="card-info"> <!-- Info -->
+              <h4>Trapsoul</h4>
+              <p class="artist">Bryson Tiller</p>
+              <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born 
+              in Louisville, Kentucky, he started his career in 2011, releasing the debut 
+              mixtape titled Killer Instinct Vol.1.</p>
+            </div>
+          </div>
+
+          <div class="card"> <!-- Slide 3 -->
+            <!-- Card image -->
+            <img class="card-img" src="resources/images/71RLkNIuZNL._SY355_.jpg">
+            <div class="card-info"> <!-- Info -->
+              <h4>Trapsoul</h4>
+              <p class="artist">Bryson Tiller</p>
+              <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born 
+              in Louisville, Kentucky, he started his career in 2011, releasing the debut 
+              mixtape titled Killer Instinct Vol.1.</p>
+            </div>
+          </div>
+          </section>
+        </section>
+
+        <div id="pagination"> <!-- Arrows for slider -->
+          <div class="arrow">
+            <img class="left" src="resources/icons/Arrows Button Left.svg">
+          </div>
+          <div class="arrow">
+            <img class="right" src="resources/icons/Arrows Button Right.svg">
+          </div>
+        </div>
+          </div>
+      </section>
+
+
+    <!--------------------------- Map ------------------------>
+        <iframe id="map" src="https://maps.google.com/maps?q=7815%20Floyd%20Street%20Overland%20Park,%20KS%2066204&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+    <!--------------------------- Get In Touch Section ------------------------>
+      <section class="contact">
+        <div class="getintouch">
+          <div class="getintouch-text">
+            <h3>Get In Touch</h3>
+            <p>New albums every single month, check out the newest & best from Snyder 
+            Recording artist, now available on Apple Music & Spotify.</p>
+          </div>
+
+          <div class="form"> <!-- Start contact form -->
+            <form action="" id="form" method="">
+              <section class="name">
+                <div class="fname">
+                  <label for="fname">First Name</label> <!-- First Name -->
+                  <input type="text" id="fname" name="firstName" placeholder="First Name" required>
+                </div>
+
+                <div class="lname">
+                  <label for="lname">Last Name</label> <!-- Last Name -->
+                  <input type="text" id="lname" name="lastName" placeholder="Last Name" required>
+                </div>
+              </section>
+              
+              <section class="email-reason">
+                <div class="email"> <!-- Email -->
+                  <label for="email">Email Address</label>
+                  <input type="text" id="email" name="emailAddress" placeholder="Email Address" required>
+                </div>
+
+                <div class="reason"> <!-- Reason for contacting -->
+                  <label for="fname">Reason For Contacting</label>
+                  <select id="reason" name="selectOne" placeholder="Select One" required>
+                    <option value="selectOne">Select One</option>
+                  </select>
+                </div>
+              </section>
+
+              <div class="message">
+                <!-- Firefox-only solution to style the textarea resizer -->
+                <div class="grabber"><!-- textarea grabber --></div> 
+                <div class="grabber-cover"><!-- covers the native resizer --></div>
+
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" placeholder="Write a brief message..."></textarea>
+              </div>
+
+              <div class="submit">
+                <button type="submit" form="form" value="Submit">Learn More</button>
+              </div>
+            </form>
+          </div> <!-- End contact form --> 
+        </div>
+
+        <div class="contact-img"> <!-- Image in the contact section --> </div>
+      </section>
+    </main>
+
+    <!--------------------------- Footer ------------------------>
+    <footer>
+      <section class="footer-links-info"> <!-- Portion of the footer above the break -->
+        <div class="footer-links flogo">
+          <img class="footer-logo" src="resources/icons/Logo-White.svg" alt="Synder Recordings">
+          <p>8521 W Fairfax Rd <br>
+          Los Angeles, CA</p>
+          <p>990210 <br>
+          (909) 505 4302</p>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><p class="uppercase">Explore</p></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Story</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><p class="uppercase">Music</p></li>
+            <li><a href="">Missing Out</a></li>
+            <li><a href="">Trapsoul</a></li>
+            <li><a href="">Sonders Sons</a></li>
+            <li><a href="">Paradise Today</a></li>
+            <li><a href="">Needed</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><p class="uppercase">Artists</p></li>
+            <li><a href="">Brent Faiyaz</a></li>
+            <li><a href="">Drake</a></li>
+            <li><a href="">Bryson Ford</a></li>
+            <li><a href="">Young Ford</a></li>
+            <li><a href="">Roy Fresco</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><p class="uppercase">Records</p></li>
+            <li><a href="">What a Time</a></li>
+            <li><a href="">Coming Home</a></li>
+            <li><a href="">Always First</a></li>
+            <li><a href="">So Far Gone</a></li>
+            <li><a href="">Big Bluez</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="bottom"> <!-- Policies and social media / Beneath the break -->
+        <div class="policy"> <!-- Policies -->
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+        </div>
+
+        <div class="socials"> <!-- Icons -->
+          <a href=""><img class="icon-white" src="resources/icons/007-instagram 1.svg"></a>
+          <a href=""><img class="icon-white" src="resources/icons/009-youtube 1.svg"></a>
+          <a href=""><img class="icon-white" src="resources/icons/004-twitter 1.svg"></a>
+          <a href=""><img class="icon-white" src="resources/icons/002-facebook 1.svg"></a>
+        </div>
+      </section>
+    </footer>
+    
+    <!--------- Javascript --------->
+    <script src="script.js"></script>
+  </body>
+</html>

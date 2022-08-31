@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/* Inter font from Google Fonts */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0px
+}
+
+body {
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-color: white;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 72px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+h3, h4 {
+    color: #001D5D;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+p {
+    color: #777;
+    font-weight: 400;
+}
+
+button {
+    width: 168px;
+    border: none;
+    border-radius: 2px;
+    background-color: #D9F0D0;
+    color: #42A418;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #42A418;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer a, header a {
+    color: white;
+}
+
+footer a:hover, header a:hover {
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+/* -------- NAV SECTION -------- */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    color: #001D5D;
+    padding: 0 20px;
+}
+
+.logo {
+    position: relative;
+    top: 12px;
+    padding-left: 50px;
+    height: 40px;
+}
+
+.nav-icon {
+    width: 18px;
+    padding-right: 12px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    height: 40px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #001D5D;
+}
+
+
+
+
+
+/* -------- HEADER SECTION -------- */
+
+header {
+    height: 720px;
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.h-background {
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)) ,
+    url('../images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    min-height: 750px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -5;
+    animation: zoom-in-out 6s ease-in-out infinite alternate;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1, 1);
+  } 100% {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.header-flex {
+    position: relative;
+    left: 10%;
+    max-width: 567px;
+    padding-right: 15%;
+    z-index: 5;
+}
+
+header p {
+    color: white;
+}
+
+.play-triangle {
+    height: 60px;
+}
+
+.watch{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 24px;
+    width: 200px;
+}
+
+.watch p {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* -------- FEATURED SECTION -------- */
+
+.featured {
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    padding: 128px 20px;
+    position: relative;
+    left: 5%;
+}
+
+.blurb {
+    padding-left: 32px;
+    padding-right: 50px;
+    width: 500px;
+}
+
+.blurb h3 {
+    padding-bottom: 32px;
+}
+
+.artist-img {
+    background-image: url('../images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp');
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+}
+
+.blurb button {
+    height: 48px;
+    margin-top: 40px;
+}
+
+
+
+
+
+/* SLIDER -- Merge or replace section below, following a tutorial -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- NEW RELEASES SECTION -------- */
+
+.new {
+    background-color: #F6F6F6;
+}
+
+.new-releases {
+    padding: 48px 50px 40px;
+    max-width: 570px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 56px 0 83px;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0 80px;
+}
+
+.slide::-webkit-scrollbar {
+    display: none;
+}
+
+.left-fade {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #F6F6F6);
+}
+
+.right-fade {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #F6F6F6);
+}
+
+.card {
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: white;
+    padding: 68px 24px;
+    margin: 0 32px;
+    max-width: 570px;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    margin-right: 32px;
+}
+
+.artist {
+    color: #42A418;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin: 12px 0;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    display: flex;
+    background-color: #B8BFCF;
+    margin: 0 16px 83px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left, .right {
+    padding: 26px;
+    height: 16px;
+}
+
+.arrow:hover {
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+/* -------- MAP SECTION -------- */
+
+iframe {
+    display: block;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 544px;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* -------- CONTACT SECTION -------- */
+
+.contact {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.getintouch {
+    padding: 64px 50px 60px 52px;
+    max-width: 550px;
+}
+
+.getintouch-text {
+    padding-right: 20px;
+}
+
+.getintouch p {
+    padding-bottom: 50px;
+}
+
+.contact-img {
+    background-image: url('../images/harry-swales-0l0KjNoAfAk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 520px;
+}
+
+
+/*    Form styling   */
+
+.name {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fname {
+    margin-right: 20px;
+}
+
+.email-reason {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-right: 20px;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+input, select, textarea {
+    color: #777;
+    border: solid 1.5px #777;
+    border-radius: 3px;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input {
+    width: 228px;
+}
+
+input:focus, select:focus, textarea:focus {
+    caret-color: #001D5D;
+    outline: none;
+    border: solid 1.5px #001D5D;
+    color: #001D5D;
+}
+
+select {
+    position: relative;
+    background-color: white;
+    color: #777;
+    appearance: none;
+    width: 255px;
+    background-image: url('../icons/Down Chevron.svg');
+    background-position:
+        calc(100% - 15px) 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    padding: 8px;
+    overflow: auto;
+    width: 510px;
+    min-height: 50px;
+    max-height: 400px;
+    resize: vertical;
+}
+
+.submit button {
+    margin-top: 20px;
+    height: 48px;
+}
+
+
+/* --- Attempts to style the textarea resize handle, could not find a "one size fits all" solution --- */
+
+/* This solution works properly in other browsers, but not Firefox */
+
+textarea {
+    background-image: url('../icons/Message size indicator.svg');
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position:
+        calc(100% - 4px) calc(100% - 4px);
+}
+
+textarea::-webkit-resizer {
+    display: none;
+}
+
+
+/* This solution only works properly in Firefox */
+
+.message {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.grabber {
+    display: none; /* <-- remove to show and comment out previous solution */
+    height: 18px;
+    width: 18px;
+    background-image: url('../icons/Message size indicator.svg');
+    background-size: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: calc(100% - 42px);
+    top: calc(100% - 23px);
+    pointer-events: none;
+    z-index: 3;
+}
+
+.grabber-cover {
+    display: none; /* <-- remove to show */
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    left: calc(100% - 43.5px);
+    top: calc(100% - 25px);
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* -------- FOOTER SECTION -------- */
+
+footer {
+    background-color: #001D5D;
+    padding: 0 50px;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-links-info {
+    padding-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.footer-links {
+    max-width: 168px;
+    padding: 40px 20px 0;
+}
+
+.footer-logo {
+    padding-top: 11px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+hr {
+    color: white;
+    margin-top: 58px;
+    margin-bottom: 24px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 29px;
+}
+
+.policy {
+    display: flex;
+    gap: 68px;
+}
+
+.socials {
+    display: flex;
+    gap: 22px;
+}
+
+.icon-white {
+    height: 24px;
+    width: 24px;
+}
+
+
+
+
+
+
+
+
+/* -------- RESPONSIVE MEDIA QUERIES -------- */
+
+
+@media screen and (max-width: 1000px) { /* --- Smaller desktop window --- */
+
+    /* NAV SECTION */
+
+    .logo {
+        padding-left: 25px;
+    }
+
+    .nav-menu {
+        margin-right: 25px;
+    }
+
+    .nav-link {
+        padding: 0 10px;
+    }
+
+    .nav-icon {
+        padding-right: 8px;
+    }
+
+    nav button {
+        width: 100px;
+    }
+
+    /* SLIDER SECTION */
+
+    .left-fade {
+        width: 200px;
+    }
+    
+    .right-fade {
+        width: 200px;
+    }
+
+
+
+
+    /* SLIDER SECTION */
+
+    .card {
+        max-width: 500px;
+    }
+
+
+
+
+    /* CONTACT SECTION */
+
+    .getintouch {
+        padding: 64px 50px 60px 52px;
+        width: 500px;
+    }
+
+    input {
+        width: 190px;
+    }
+
+    select {
+        width: 218px;
+    }
+
+    textarea {
+        width: 438px;
+    }
+
+    .grabber {
+        left: calc(100% - 22px);
+        top: calc(100% - 23px);
+    }
+
+    .grabber-cover {
+        left: calc(100% - 22.5px);
+        top: calc(100% - 24.5px);
+    }
+
+    .submit button {
+        margin-top: 20px;
+        height: 48px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) { /* --- Tablets --- */
+
+    /* NAV SECTION */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        z-index: 99;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        top: 25%;
+        right: 3%;
+    }
+ 
+    .hamburger:hover {
+        opacity: 50%;
+    }
+
+    /* hamburger animation start */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    } /* hamburger animation end */
+
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        /* left: -100%; */
+        top: 64px;
+        background-color: #F6F6F6;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 50px;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-flow: row;
+        margin-top: 30px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    nav button {
+        margin-top: 30px;
+        width: 168px;
+    }
+
+
+
+    /* HEADER SECTION */
+
+    header {
+        height: 720px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .header-flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        position: inherit;
+        padding: 0 50px;
+    }
+    
+    .watch{
+        margin-top: 35px;
+    }
+
+
+
+    /* FEATURED SECTION */
+    
+    .featured {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 0;
+        margin: 0 20px;
+        position: inherit;
+    }
+
+    .blurb {
+        padding: 0 32px;
+    }
+    
+    .artist-img {
+        background-image: url('../images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp');
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        margin: 0 20px 32px;
+        width: 80%;
+    }
+
+
+
+    /* SLIDER SECTION */
+
+    .left-fade {
+        width: 100px;
+    }
+    
+    .right-fade {
+        width: 100px;
+    }
+
+    .slide {
+        padding: 0 25px;
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    .card-img {
+        width: 55%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* CONTACT SECTION */
+
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .getintouch-text {
+        text-align: center;
+    }
+
+    .contact-img {
+        background-image: url('../images/harry-swales-0l0KjNoAfAk-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    input {
+        width: 180px;
+    }
+    
+    select {
+        width: 208px;
+    }
+    
+    textarea {
+        width: 420px;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-links {
+        padding: 20px 30px;
+    }
+
+    .bottom {
+        display: flex;
+        gap: 0 40px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 479px) { /* --- Mobile Devices --- */
+    
+    /* NAV SECTION */
+
+    #hamburger {
+        right: 4%;
+    }
+
+
+
+    /* CONTACT SECTION */
+
+    .getintouch {
+        padding: 64px 20px 60px;
+    }
+    
+    input {
+        width: 150px;
+    }
+    
+    select {
+        width: 175px;
+    }
+    
+    textarea {
+        width: 355px;
+    }
+
+
+
+
+
+    /* FOOTER */
+
+    .footer-links-info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    .footer-links {
+        padding: 40px 20px 0;
+    }
+
+    .flogo {
+        margin: 0 50px;
+    }
+
+    .uppercase {
+        margin-top: 40px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .policy {
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
